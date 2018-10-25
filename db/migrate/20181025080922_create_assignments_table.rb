@@ -9,4 +9,3 @@ class CreateAssignments < ActiveRecord::Migration
       t.timestamps null: false
   end
 end
-test
