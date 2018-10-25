@@ -1,4 +1,4 @@
-class CreateEmployees < ActiveRecord::Migration
+class CreateEmployeesTable < ActiveRecord::Migration
   def change
     create_table :employees do |t|
       t.string :name
@@ -6,5 +6,6 @@ class CreateEmployees < ActiveRecord::Migration
       t.integer :user_id
       
       t.timestamps null: false
+    end
   end
 end

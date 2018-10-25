@@ -1,4 +1,4 @@
-class CreateAssignments < ActiveRecord::Migration
+class CreateAssignmentsTable < ActiveRecord::Migration
   def change
     create_table :assignments do |t|
       t.integer :time
@@ -7,5 +7,6 @@ class CreateAssignments < ActiveRecord::Migration
       t.integer :shift_id
       
       t.timestamps null: false
+    end
   end
 end

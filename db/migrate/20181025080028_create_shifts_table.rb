@@ -1,4 +1,4 @@
-class CreateShifts < ActiveRecord::Migration
+class CreateShiftsTable < ActiveRecord::Migration
   def change
     create_table :shifts do |t|
       t.string :location
@@ -6,5 +6,6 @@ class CreateShifts < ActiveRecord::Migration
       t.integer :user_id
       
       t.timestamps null: false
+    end
   end
 end
